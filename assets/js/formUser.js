@@ -1,6 +1,3 @@
-
-
-
 const storageKey='STORAGE_KEY'
 const submitAction=document.getElementById('form-data-user');
 
@@ -19,11 +16,12 @@ document.addEventListener('DOMContentLoaded',function(){
             para.style.left='0';
             para.style.color='red';
             para.style.fontSize='10px';
-            document.getElementById('form').appendChild(para);
+            document.getElementById('falseNotif').appendChild(para);
         } else {
             signUpButtonStatus.removeAttribute('disabled');
+            signUpButtonStatus.classList.add('signUp')
             signUpButtonStatus.style.cursor='pointer';
-            var x = document.getElementById('form').querySelectorAll('.hapus');
+            let x = document.getElementById('falseNotif').querySelectorAll('.hapus');
             x[0].remove();
             x[1].remove();
             x[2].remove();
@@ -43,7 +41,7 @@ document.addEventListener('DOMContentLoaded',function(){
             password:inputPassword
         }
         if(newUserData!==null){
-            alert('Selemat! Anda sudah terdaftar :D')
+            alert(`Selemat ${inputNama} ! Anda sudah terdaftar :D`)
         }
         event.preventDefault();
     });
