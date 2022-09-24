@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Form</title>
+        <link rel="stylesheet" href="assets/css/formUser.css">
+    </head>
+    <body>
+        <div class="contents">
+            
+            <h2>Create Account</h2>
+            <div class="formContent">
+
+                <form id="form-data-user">
+                    
+                    <div class="form-element">
+                        <img src="assets/image/user.png" alt="user-name">
+                        <div class="form">
+                            <label for="nama">FULL NAME</label><br>
+                            <input type="text" id="nama" name="name" required><br>
+                        </div>
+                    </div>
+
+                    <div class="form-element">
+                        <img src="assets/image/envelope.png" alt="user-email">
+                        <div class="form">
+                            <label for="email">EMAIL</label><br>
+                            <input type="text" id="email" name="envelope" required><br>
+                        </div>
+                    </div>
+
+                    <div class="form-element">
+                        <img src="assets/image/lock.png" alt="user-pass">
+                        <div class="form">
+                            <label for="pass">PASSWORD</label><br>
+                            <input type="password" id="pass" name="password" minlength="6" maxlength="10" required><br>
+                        </div>
+                    </div>
+
+                    <div class="form-element">
+                        <img src="assets/image/lock.png" alt="user-pass">
+                        <div class="form">
+                            <label for="conPass">CONFIRM PASSWORD</label><br>
+                            <input type="password" id="conPass" name="password" minlength="6" maxlength="10" required><br>
+                            <div id="form"></div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="submit-log">
+                        <input type="submit" id="signUp" value="Sign Up   &#8594" src="assets/image/arrow-right.png" disabled>
+                    </div>
+                </form>
+            </div>
+            <h3 id="messageAfterSubmit"></h3>
+
+        </div>
+        
+
+
+        <script src="assets/js/formUser.js"></script>
+    </body>
+</html>

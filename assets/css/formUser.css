@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(207, 196, 177);
+}
+
+h2, h3, h4, #form-data-user{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.contents{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    box-shadow: 15px 15px 40px gray;
+    padding: 30px;
+}
+
+.form-element{
+    margin-bottom: 30px;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.submit-log{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#signUp{
+    padding: 10px;
+    position: absolute;
+    border-radius: 20px;
+    right: 0;
+    font-weight: bold;
+}
+
+/* #signUp:hover{
+    border: 2px solid #5F30E2;
+    background-color: #5F30E2;
+    color: white;
+    cursor: pointer;
+} */
+
+img{
+    width: 25px;
+    height: 25px;
+    border: none;
+    margin: 10px;
+    margin-left: 0;
+}
+
